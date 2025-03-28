@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #eef3fc, #d9e6fa);
+  min-height: 100vh;
+}
+
+header {
+  background-color: #19a359;
+  color: white;
+  padding: 1rem 4vw;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  padding: 1rem 4rem;
+}
+
+.task-form {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 0.625rem;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+input {
+  flex-grow: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #1e73e8;
+  outline: none;
+  box-shadow: 0 0 8px rgba(30, 115, 232, 0.5);
+}
+
+button {
+  background: #19a359;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #155ab6;
+}
+
+.task-board {
+  display: flex;
+  gap: 4rem; /* Увеличенный интервал */
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.backlog,
+.progress,
+.done,
+.trash {
+  width: 16vw;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+li {
+  background: white;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+h3 {
+  text-align: center;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Backlog – Фиолетовый */
+.backlog h3 {
+  background: rgba(138, 43, 226, 0.2);
+  color: rgb(138, 43, 226);
+}
+
+.backlog li {
+  border-left: 0.5rem solid rgba(138, 43, 226, 0.7);
+}
+
+/* In Progress – Розовый */
+.progress h3 {
+  background: rgba(255, 105, 180, 0.2);
+  color: rgb(255, 105, 180);
+}
+
+.progress li {
+  border-left: 0.5rem solid rgba(255, 105, 180, 0.7);
+}
+
+/* Done – Салатовый */
+.done h3 {
+  background: rgba(144, 238, 144, 0.2);
+  color: rgb(60, 179, 113);
+}
+
+.done li {
+  border-left: 0.5rem solid rgba(144, 238, 144, 0.7);
+}
+
+/* Trash – Красный */
+.trash h3 {
+  background: rgba(220, 20, 60, 0.2);
+  color: rgb(220, 20, 60);
+}
+
+.trash li {
+  border-left: 0.5rem solid rgba(220, 20, 60, 0.7);
+}
+
+.clear-btn {
+  background: #d9534f;
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  transition: background 0.3s ease;
+}
+
+.clear-btn:hover {
+  background: #c9302c;
+}
