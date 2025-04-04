@@ -13,13 +13,12 @@ render(new HeaderComponent(), bodyContainer, RenderPosition.BEFOREBEGIN);
 render(new FormAddTaskComponent(), bodyContainer, RenderPosition.AFTERBEGIN);
 const taskBoard = new TaskBoardComponent()
 render(taskBoard, bodyContainer, RenderPosition.BEFOREEND);
-const selectors = ['backlog', 'progress', 'done', 'trash'];
-selectors.forEach((selector) => {
-    const taskDivElement = taskBoard.getElement().querySelector(`.${selector}`); // Используем selector вместо i
+
+for (let i = 0; i < 4; i++) {
     const taskListComponent = new TaskListComponent();
-    render(taskListComponent, taskDivElement, RenderPosition.BEFOREEND);
-    
+    render(taskListComponent, taskBoard.getElement(), RenderPosition.BEFOREEND);
+    const listContainer = taskListComponent.getElement().querySelector('ul');
     for (let j = 0; j < 4; j++) {
-        render(new TaskComponent(), taskListComponent.getElement(), RenderPosition.BEFOREEND);
+        render(new TaskComponent(), listContainer, RenderPosition.BEFOREEND);
     }
-});
+}
