@@ -4,21 +4,20 @@ body {
   padding: 0;
   background: linear-gradient(to bottom, #eef3fc, #d9e6fa);
   min-height: 100vh;
+  
 }
 
 header {
   background-color: #19a359;
   color: white;
-  padding: 1rem 4vw;
   text-align: left;
   font-size: 1.2rem;
+  padding: 1% 3rem;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  padding: 1rem 4rem;
-}
+
 
 .task-form {
   background: white;
@@ -26,6 +25,7 @@ header {
   border-radius: 0.625rem;
   display: inline-block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px;
 }
 
 .input-group {
@@ -48,6 +48,60 @@ input:focus {
   box-shadow: 0 0 8px rgba(30, 115, 232, 0.5);
 }
 
+.backlogTitle h3 {
+  background-color: #ccc;
+  
+}
+
+.processingTitle h3 {
+  background-color: #1e73e8;
+  
+}
+
+.doneTitle h3 {
+  background-color: #19a359;
+  
+}
+
+.basketTitle h3 {
+  background-color: #c9302c;
+  
+}
+
+.backlogTitle li {
+  border-left: 5px solid #ccc;
+  
+}
+
+.processingTitle li {
+  border-left: 5px solid #1e73e8;
+  
+}
+
+.doneTitle li {
+  border-left: 5px solid #19a359;
+  
+}
+
+.basketTitle li {
+  border-left: 5px solid #c9302c;
+  
+}
+
+li {
+  background-color: white;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  max-width: 250px;
+  border-radius: 0.625rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+
+
+
 button {
   background: #19a359;
   color: white;
@@ -65,16 +119,9 @@ button:hover {
 
 .task-board {
   display: flex;
-  gap: 4rem; /* Увеличенный интервал */
-  margin-top: 3rem;
   justify-content: center;
-}
-
-.backlog,
-.progress,
-.done,
-.trash {
-  width: 16vw;
+  gap: 4rem; 
+  margin-left: 3rem;
 }
 
 ul {
@@ -82,18 +129,9 @@ ul {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.4rem;
 }
 
-li {
-  background: white;
-  padding: 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 0.625rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
 
 li:hover {
   transform: translateY(-3px);
@@ -104,58 +142,20 @@ h3 {
   border-radius: 0.625rem;
   padding: 0.75rem;
   display: inline-block;
-  margin: 0.5rem 0;
+  margin: 0rem 0;
   font-size: 1.1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Backlog – Фиолетовый */
-.backlog h3 {
-  background: rgba(138, 43, 226, 0.2);
-  color: rgb(138, 43, 226);
-}
 
-.backlog li {
-  border-left: 0.5rem solid rgba(138, 43, 226, 0.7);
-}
-
-/* In Progress – Розовый */
-.progress h3 {
-  background: rgba(255, 105, 180, 0.2);
-  color: rgb(255, 105, 180);
-}
-
-.progress li {
-  border-left: 0.5rem solid rgba(255, 105, 180, 0.7);
-}
-
-/* Done – Салатовый */
-.done h3 {
-  background: rgba(144, 238, 144, 0.2);
-  color: rgb(60, 179, 113);
-}
-
-.done li {
-  border-left: 0.5rem solid rgba(144, 238, 144, 0.7);
-}
-
-/* Trash – Красный */
-.trash h3 {
-  background: rgba(220, 20, 60, 0.2);
-  color: rgb(220, 20, 60);
-}
-
-.trash li {
-  border-left: 0.5rem solid rgba(220, 20, 60, 0.7);
-}
 
 .clear-btn {
   background: #d9534f;
   color: white;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.1rem;
   border-radius: 0.625rem;
-  padding: 0.75rem;
+  padding: 0.5rem;
   transition: background 0.3s ease;
 }
 
