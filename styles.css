@@ -107,47 +107,9 @@ h3 {
   margin: 0.5rem 0;
   font-size: 1.1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-/* Backlog – Фиолетовый */
-.backlog h3 {
-  background: rgba(138, 43, 226, 0.2);
-  color: rgb(138, 43, 226);
-}
-
-.backlog li {
-  border-left: 0.5rem solid rgba(138, 43, 226, 0.7);
-}
-
-/* In Progress – Розовый */
-.progress h3 {
-  background: rgba(255, 105, 180, 0.2);
-  color: rgb(255, 105, 180);
-}
-
-.progress li {
-  border-left: 0.5rem solid rgba(255, 105, 180, 0.7);
-}
-
-/* Done – Салатовый */
-.done h3 {
-  background: rgba(144, 238, 144, 0.2);
-  color: rgb(60, 179, 113);
-}
-
-.done li {
-  border-left: 0.5rem solid rgba(144, 238, 144, 0.7);
-}
-
-/* Trash – Красный */
-.trash h3 {
-  background: rgba(220, 20, 60, 0.2);
-  color: rgb(220, 20, 60);
-}
-
-.trash li {
-  border-left: 0.5rem solid rgba(220, 20, 60, 0.7);
-}
 
 .clear-btn {
   background: #d9534f;
