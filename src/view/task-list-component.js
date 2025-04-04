@@ -3,7 +3,12 @@ import {createElement} from '../framework/render.js';
 
 function createTaskListComponentTemplate() {
     return (
-        `<ul></ul>`
+        `<div>
+            <h3>Список задач</h3>\
+            <ul>
+            
+            </ul>
+        </div>`
       );
 }
 
