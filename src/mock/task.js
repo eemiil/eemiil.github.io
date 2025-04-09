@@ -32,12 +32,12 @@ export const tasks = [
     {
         id: "7",
         title:"Разработать сервер на .NET(C#)",
-        status: "done",
+        status: "basket",
     },
     {
         id: "8",
         title:"Настроить маршрутизацию в React",
-        status: "done",
+        status: "processing",
     },
     {
         id: "9",

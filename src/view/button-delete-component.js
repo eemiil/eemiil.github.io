@@ -1,4 +1,5 @@
 import {createElement} from '../framework/render.js';
+import { AbstractComponent } from '../framework/view/abstract-component.js';
 
 
 function createButtonDeleteComponentTemplate() {
@@ -10,24 +11,10 @@ function createButtonDeleteComponentTemplate() {
 }
 
 
-export default class ButtonDeleteComponent {
+export default class ButtonDeleteComponent extends AbstractComponent {
 
-  getTemplate() {
+  get template() {
     return createButtonDeleteComponentTemplate();
   }
 
-
-  getElement() {
-    if (!this.element) {
-      this.element = createElement(this.getTemplate());
-    }
-
-
-    return this.element;
-  }
-
-
-  removeElement() {
-    this.element = null;
-  }
 }
